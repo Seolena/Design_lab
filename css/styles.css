@@ -1,0 +1,270 @@
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	font: 14px/1.4 'Lato', Arial, sans-serif;
+	letter-spacing: 0.5px;
+	
+	
+}
+
+.header  {
+	height: 122vh;
+	padding: 22vh 10% 5vh;
+	position: relative;
+}
+
+.header .container {
+	/*height: 100%;*/
+	/*display: flex;
+	justify-content: flex-end;
+	flex-direction: column;*/
+	padding: 0 10%;
+
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+}
+
+.section {
+	text-align: center;
+	line-height: 2;
+}
+
+.section--bg {
+	background-color: #e2e7ec;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #fff;
+}
+
+
+.section__title {
+	text-transform: uppercase;
+	
+	margin: 7vh 0 4vh;
+	letter-spacing: 3px;
+	font-size: 50px;
+}
+
+.section__subtitle {
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.section__anchor {
+	position: absolute;
+	bottom: 5vh;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.section__wrap {
+	border: 2px solid #4c4c4c;
+	border-top-color: transparent;
+	margin: 130px 0;
+	padding: 50px 150px;
+	position: relative;
+	letter-spacing: 0.5px;
+
+}
+
+
+
+.section__wrap::before, .section__wrap::after  {
+	content: '';
+	display: block;
+	width: 30%;
+	position: absolute;  
+	top: -2px;
+	left: -2px;
+
+	border-bottom: 2px solid #4c4c4c;
+
+}
+
+
+ .section__wrap::after  {
+	content: '';
+	 
+	right: -2px;
+	left: auto;
+}
+
+.section__wrap .section__title {
+	margin: -86px 0 60px 0;
+	
+	letter-spacing: 2.2px;
+	font-size: 34px;
+}
+
+.section__wrap p {
+		
+		padding-bottom: 30px;
+		
+}
+
+.section__p {
+	padding: 0 60px;
+
+} 
+
+.section--body {
+	
+	padding: 30px 0;
+}
+
+
+
+.section__wrap--white {
+	border: 2px solid white;
+	border-top-color: transparent;
+}
+
+
+
+
+
+.section__wrap--white::before, .section__wrap--white::after  {
+	/*content: '';*/
+	
+	border-bottom: 2px solid white;
+
+}
+
+
+.section--svg {
+	/*background-color: #999;*/
+}
+
+
+.item__title {
+	text-transform: uppercase;
+	margin: 20px auto;
+	font-size: 16px;
+}
+
+.item__text {
+	padding: 0 60px;
+}
+
+
+.section--6sections{
+	display: flex;
+	flex-direction: row;
+	 flex-wrap: wrap;
+}
+
+
+.section__img {
+	
+		height: 180px;
+	 /*width:33%;*/
+	margin-right: 0.5%;
+	margin-bottom: 5px;
+	position: relative;
+}
+
+
+.section__img--small {
+	
+	 width: 29.5%;
+	
+}
+
+.section__img--lg {
+	width: 40%;
+}
+
+
+.section__img:nth-child(3n) {
+	margin-right: 0;
+}
+
+
+.img__title {
+		position: absolute;
+		bottom: 20px;
+		left: 20px;
+		text-transform: uppercase;
+		color: white;
+		letter-spacing: 3px;
+		font-size: 22px;
+}
+
+
+.section__btn {
+	width: 380px;
+	height: 55px;
+	background-color: #3c3c3c;
+	color: #fff;
+	margin: 30px 0;
+	text-transform: uppercase;
+	border: 0;
+	font-size: 16px;
+	outline: none;
+}
+
+.section__btn:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.footer__section {
+	text-align: center;
+	font-size: 13px;
+
+}
+
+
+.footer__svg  {
+	display: inline-block;
+}
+
+.footer__text {
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 20px;
+	margin: 13px 0 65px 0; 
+	color: #444;
+
+}
+
+
+.footer__link {
+	text-decoration: none;
+	color: #444;
+	
+}
+
+/*
+ .section__wrap--white::after  {
+	content: '';
+	 
+	right: -2px;
+	left: auto;
+
+
+}*/
+
+
+/*20-38 section wrap внутри сексшиона бг в домашнем. 
+В спрайт символ добавляем ещё один элемент*/ 
+
+/*20-35 трансляции посмотреть, как мы высчитали марджин 47px;*/
+/*вот эти обводочки делаем с бордером и бефор афтер*/
+/*мы попробовали расставить элементы в хедере с помощью флексов, но оставили эту идею*/
